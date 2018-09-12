@@ -1,4 +1,7 @@
 package jobsheet07;
+
+import java.util.Scanner;
+
 public class Jobsheet07 {
     private static void tampilJudul(String identitas) {
         System.out.println("Identitas : "+ identitas);
@@ -10,6 +13,16 @@ public class Jobsheet07 {
         String identitas = "Marcel Sinko Octavian / XRPL3 / 21";
         
         tampilJudul(identitas);
+        int n = tampilInput();
+    }
+    private static int tampilInput() {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        
+        return n;
     }
     
 }
